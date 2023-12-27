@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-14T12:17:15 CST" name="Default suite" finished-at="2023-12-14T12:17:36 CST" duration-ms="20850">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner@702657cc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-12-14T12:17:15 CST" name="Default test" finished-at="2023-12-14T12:17:36 CST" duration-ms="20850">
+      <class name="runner.testrunner">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:runner.testrunner@702657cc]" started-at="2023-12-14T12:17:06 CST" name="beforeSuit" finished-at="2023-12-14T12:17:15 CST" duration-ms="8718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuit -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testrunner@702657cc]" started-at="2023-12-14T12:17:15 CST" name="setUpClass" finished-at="2023-12-14T12:17:15 CST" duration-ms="760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4044589a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner@702657cc]" started-at="2023-12-14T12:17:15 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-14T12:17:34 CST" duration-ms="18699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testrunner@702657cc]" started-at="2023-12-14T12:17:34 CST" name="tearDownClass" finished-at="2023-12-14T12:17:36 CST" duration-ms="1365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:runner.testrunner@702657cc]" started-at="2023-12-14T12:17:36 CST" name="tearDown" finished-at="2023-12-14T12:17:37 CST" duration-ms="1572" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [758e28c3-948e-4441-b936-3ff1a4c854de, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:debuggerAddress: 127.0.0.1:31059, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9636, moz:profile: C:\Users\psingh3\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:31059/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 758e28c3-948e-4441-b936-3ff1a4c854de]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [758e28c3-948e-4441-b936-3ff1a4c854de, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:debuggerAddress: 127.0.0.1:31059, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9636, moz:profile: C:\Users\psingh3\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:31059/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 758e28c3-948e-4441-b936-3ff1a4c854de
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:128)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- runner.testrunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
